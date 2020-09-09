@@ -2,7 +2,7 @@
 
 ### You can see the [demo](https://iviva-dashboard.herokuapp.com/)
 
-# technoligies used
+# technologies used
 * React
 * Redux
 * Chartjs
