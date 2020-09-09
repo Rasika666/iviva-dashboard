@@ -2,3 +2,6 @@ export const GET_IVIVADATA = "GET_IVIVADATA";
 export const LOADING_IVIVADATA = "LOADING_IVIVADATA";
 
 export const UPDATE_VALUE = "UPDATE_VALUE";
+
+export const UPDATE_PAGE = "UPDATE_PAGE";
+export const RESET_PAGE = "RESET_PAGE";

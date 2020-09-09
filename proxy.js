@@ -10,7 +10,6 @@ app.use((req, res, next) => {
 
 app.get('/ivivdata', (req, res) => {
     const {max, last} = req.query; 
-    console.log("awa")
     request(
       { url: `http://ivivaanywhere.ivivacloud.com/api/Asset/Asset/All?apikey=SC:demo:64a9aa122143a5db&max=${max}&last=${last}` },
       (error, response, body) => {

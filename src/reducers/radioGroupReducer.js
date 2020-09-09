@@ -4,7 +4,7 @@ const initstate = {
     loadedValue: "10"
 }
 
-const radioGroupReducer= (state = initstate, action) => {
+const radioGroupReducer = (state = initstate, action) => {
     const {type, payload} = action;
 
     switch(type) {

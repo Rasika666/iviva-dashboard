@@ -27,6 +27,11 @@ function RadioButtonGroup() {
 						<FormControlLabel value="30" control={<Radio />} label="30" />
 						<FormControlLabel value="40" control={<Radio />} label="40" />
 						<FormControlLabel value="50" control={<Radio />} label="50" />
+						<FormControlLabel value="60" control={<Radio />} label="60" />
+						<FormControlLabel value="70" control={<Radio />} label="70" />
+						<FormControlLabel value="80" control={<Radio />} label="80" />
+						<FormControlLabel value="90" control={<Radio />} label="90" />
+						<FormControlLabel value="100" control={<Radio />} label="100" />
 				</RadioGroup>
 			</FormControl>
     )

@@ -8,14 +8,21 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import {getivivadata} from '../actions/ivivaActions';
 
+
 function Dashboard() {
 
 	const dispatch = useDispatch();
 	const rootstate = useSelector(state => state);
 
+	const page = rootstate.pagination.page;
+	const max_value = rootstate.radioGroup.loadedValue;
+
+	// get the last index
+	const last_index = (page - 1) * max_value;
+
 	useEffect(()=>{
-		getivivadata(dispatch, rootstate.radioGroup.loadedValue, 0);
-	}, [rootstate.radioGroup]);
+		getivivadata(dispatch, max_value, last_index);
+	}, [rootstate.radioGroup, rootstate.pagination]);
 
 	let equipement_type = {}
 	let operationa_state = {

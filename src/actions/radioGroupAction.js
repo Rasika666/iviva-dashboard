@@ -1,6 +1,10 @@
-import {UPDATE_VALUE} from './type';
+import {UPDATE_VALUE, RESET_PAGE} from './type';
 
 export const updateLoadingValue = (dispatch, value) => {
+
+    dispatch({
+        type: RESET_PAGE
+    })
     
     dispatch({
         type: UPDATE_VALUE,
