@@ -1,4 +1,4 @@
-# iviva dashboard for monitoring equipment status
+# iviva dashboard for monitoring equipments status
 
 ### You can see the [demo](https://iviva-dashboard.herokuapp.com/)
 
