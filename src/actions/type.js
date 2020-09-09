@@ -1,0 +1,4 @@
+export const GET_IVIVADATA = "GET_IVIVADATA";
+export const LOADING_IVIVADATA = "LOADING_IVIVADATA";
+
+export const UPDATE_VALUE = "UPDATE_VALUE";
