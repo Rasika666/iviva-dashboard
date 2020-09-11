@@ -1,8 +1,12 @@
-import {GET_IVIVADATA} from './type'
+import {DATA_LOADED, GET_IVIVADATA, LOADING_IVIVADATA} from './type'
 
 
 export const getivivadata = (dispatch, max, last) => {
-	
+
+	dispatch({
+		type: LOADING_IVIVADATA
+	})
+
   fetch(`/ivivdata/?max=${max}&last=${last}`)
 	.then(res => res.json())
 	.then(data => {
@@ -13,4 +17,10 @@ export const getivivadata = (dispatch, max, last) => {
 	})
 	.catch(err => console.log(err))
 
+}
+
+export const dataLoaded = (dispatch) => {
+	dispatch({
+		type: DATA_LOADED
+	})
 }

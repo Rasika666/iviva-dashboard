@@ -1,4 +1,4 @@
-import {GET_IVIVADATA, LOADING_IVIVADATA} from '../actions/type.js';
+import {GET_IVIVADATA, LOADING_IVIVADATA, DATA_LOADED} from '../actions/type.js';
 
 const initstate = {
     isLoading: null,
@@ -19,7 +19,12 @@ const ivivaReducer = (state = initstate, action) => {
         case GET_IVIVADATA:
             return {
                 ...state,
-                ivivadata: payload,
+                ivivadata: [...state.ivivadata, ...payload],
+            }
+
+        case DATA_LOADED:
+            return {
+                ...state,
                 isLoading: false
             }
 

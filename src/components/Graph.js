@@ -22,10 +22,19 @@ const data = {
   ]
 };
 
-  const bar = (<Bar data={data} 
+  const bar = (<Bar data={data} width={500} height={300}
     options= {{
         maintainAspectRatio : true,
-        responsive: true
+        responsive: true,
+        scales: {
+          xAxes: [{
+              ticks: {
+                  autoSkip: false,
+                  maxRotation: 90,
+                  minRotation: 90
+              }
+          }]
+      }
     }}
   />);
 
